@@ -1,0 +1,22 @@
+{
+	"name": "hexlet/code",
+	"description": "my first project on Hexlet",
+	"type": "project",
+	"license": "MIT",
+	"version": "1.0.0",
+	"bin": [
+		"bin/brain-games"
+	],
+	"autoload": {
+		"psr-4": {
+			"Zick\\PhpProjectLvl1\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "aleks",
+			"email": "aleks@fake.ru"
+		}
+	],
+	"require": {}
+}
