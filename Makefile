@@ -33,3 +33,6 @@ brain-calc:
 # запуск игры "НОД (Наибольший общий делитель)"
 brain-gcd:
 	./bin/brain-gcd
+# запуск игры "Арифметическая прогрессия"
+brain-progression:
+	./bin/brain-progression
