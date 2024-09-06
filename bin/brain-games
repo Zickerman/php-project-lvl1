@@ -3,7 +3,8 @@
 <?php
 
 require_once(__DIR__ . '/../vendor/autoload.php');
-require_once(__DIR__ . '/../src/Cli.php');
+require_once(__DIR__ . '/../src/Engine.php');
 
+use function Php\Project\Lvl1\greet;
 
-\Php\Project\Lvl1\greet();
+greet();

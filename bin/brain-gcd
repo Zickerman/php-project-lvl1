@@ -2,7 +2,6 @@
 
 <?php
 require_once(__DIR__ . '/../vendor/autoload.php');
-require_once(__DIR__ . '/../src/Cli.php');
 require_once(__DIR__ . '/../src/Engine.php');
 require_once(__DIR__ . '/../src/Games/Gcd.php');
 
@@ -12,4 +11,4 @@ use function Php\Project\Lvl1\Games\gcdGame;
 
 
 $description = 'Find the greatest common divisor of given numbers';
-playGame($description, 'Php\Project\Lvl1\Games\gcdGame', greet());
+playGame($description, fn() => gcdGame(), greet());
