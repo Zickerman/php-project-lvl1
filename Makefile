@@ -30,3 +30,6 @@ brain-even:
 # запуск игры "Калькулятор"
 brain-calc:
 	./bin/brain-calc
+# запуск игры "НОД (Наибольший общий делитель)"
+brain-gcd:
+	./bin/brain-gcd

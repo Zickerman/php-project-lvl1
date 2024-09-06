@@ -9,3 +9,6 @@ https://asciinema.org/a/aAKsoZaHZFC2NDgDyZIHR1S8n
 
 ## Посмотреть работу программы ("Калькулятор")
 https://asciinema.org/a/BEZNRPjY7faF8vsf81Y27cvYH
+
+## Посмотреть работу программы ("НОД (Наибольший общий делитель)")
+https://asciinema.org/a/AnASfHnmIkHTH2FerKLW0DTcE
