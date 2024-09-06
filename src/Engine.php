@@ -5,20 +5,19 @@ namespace Php\Project\Lvl1;
 use function cli\line;
 use function cli\prompt;
 
-function evenGame(string $userName)
+function playGame(string $description, callable $getGameData, string $userName)
 {
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    line($description);
 
     $counter = 0;
 
     while ($counter < 3) {
-        $randomNumber = rand(0, 500);
-        $correctAnswer = $randomNumber % 2 === 0 ? 'yes' : 'no';
+        [$question, $correctAnswer] = $getGameData();
 
-        line('Question: %s', $randomNumber);
-        $userAnswer = (string) prompt('Your answer');
+        line('Question: %s', $question);
+        $userAnswer = prompt('Your answer');
 
-        if ($userAnswer === $correctAnswer) {
+        if ((string)$userAnswer === (string)$correctAnswer) {
             line('Correct!');
             $counter += 1;
         } else {

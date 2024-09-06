@@ -6,3 +6,6 @@ PHP 8.3.11
 
 ## Посмотреть работу программы (шаг с установкой всего необходимого + игра: "Проверка на чётность")
 https://asciinema.org/a/aAKsoZaHZFC2NDgDyZIHR1S8n
+
+## Посмотреть работу программы ("Калькулятор")
+https://asciinema.org/a/BEZNRPjY7faF8vsf81Y27cvYH

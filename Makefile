@@ -27,3 +27,6 @@ lint-fix:
 # запуск игры "Проверка на чётность"
 brain-even:
 	./bin/brain-even
+# запуск игры "Калькулятор"
+brain-calc:
+	./bin/brain-calc
