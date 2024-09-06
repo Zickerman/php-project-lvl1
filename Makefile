@@ -3,11 +3,11 @@ install: prepare
 # проверяем не добавлена ли папка vendor если нет, то добавляем
 	grep -q '/vendor/' .gitignore || echo "/vendor/" >> .gitignore
 prepare:
-# делаем файл исполняемым
-	chmod 755 ./bin/brain-games
+# делаем файлы в каталоге bin исполняемыми
+	chmod 755 ./bin/*
 
 
-# запуск игры
+# приветствие
 brain-games:
 	./bin/brain-games
 
@@ -22,3 +22,8 @@ lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 lint-fix:
 	composer exec --verbose phpcbf -- --standard=PSR12 src bin
+
+
+# запуск игры "Проверка на чётность"
+brain-even:
+	./bin/brain-even
