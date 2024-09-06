@@ -22,7 +22,7 @@ function playGame(string $description, callable $getGameData, string $userName)
             $counter += 1;
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
-            line("Let's try again %s!", $userName);
+            line("Let's try again, %s!", $userName);
             return;
         }
     }
