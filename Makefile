@@ -9,7 +9,7 @@ prepare:
 
 # приветствие
 brain-games:
-	./bin/brain-games
+	@./bin/brain-games
 
 
 # проверяем файл composer.json на корректность
@@ -26,16 +26,16 @@ lint-fix:
 
 # запуск игры "Проверка на чётность"
 brain-even:
-	./bin/brain-even
+	@./bin/brain-even
 # запуск игры "Калькулятор"
 brain-calc:
-	./bin/brain-calc
+	@./bin/brain-calc
 # запуск игры "НОД (Наибольший общий делитель)"
 brain-gcd:
-	./bin/brain-gcd
+	@./bin/brain-gcd
 # запуск игры "Арифметическая прогрессия"
 brain-progression:
-	./bin/brain-progression
+	@./bin/brain-progression
 # запуск игры "Простое ли число"
 brain-prime:
-	./bin/brain-prime
+	@./bin/brain-prime
