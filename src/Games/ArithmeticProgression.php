@@ -16,7 +16,7 @@ function arithmeticProgressionGame(): array
     $missingIndex = array_rand($numbers);
 
     $result = $numbers[$missingIndex];
-    $numbers[$missingIndex] = '...';
+    $numbers[$missingIndex] = '..';
     $question = implode(' ', $numbers);
 
     return [$question, $result];

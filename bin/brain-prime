@@ -9,5 +9,5 @@ use function Php\Project\Lvl1\playGame;
 use function Php\Project\Lvl1\Games\primeNumberGame;
 
 
-$description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
+$description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 playGame($description, fn() => primeNumberGame(), greet());
