@@ -9,5 +9,5 @@ use function Php\Project\Lvl1\playGame;
 use function Php\Project\Lvl1\Games\gcdGame;
 
 
-$description = 'Find the greatest common divisor of given numbers';
+$description = 'Find the greatest common divisor of given numbers.';
 playGame($description, fn() => gcdGame(), greet());
