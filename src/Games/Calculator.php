@@ -43,5 +43,7 @@ function calculateResult(int $a, int $b, string $operator): int
             return $a - $b;
         case '*':
             return $a * $b;
+        default:
+            return 0;
     }
 }

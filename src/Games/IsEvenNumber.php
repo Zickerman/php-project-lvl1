@@ -20,5 +20,5 @@ function evenGame(): array
     $randomNumber = rand(0, 500);
     $correctAnswer = $randomNumber % 2 === 0 ? 'yes' : 'no';
 
-    return [$randomNumber, (string) $correctAnswer];
+    return [$randomNumber, $correctAnswer];
 }

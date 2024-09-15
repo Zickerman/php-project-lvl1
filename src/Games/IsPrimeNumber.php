@@ -21,7 +21,7 @@ function primeNumberGame(): array
     $isPrime = isPrimeNumber($question);
     $result = $isPrime ? 'yes' : 'no';
 
-    return [$question, (string) $result];
+    return [$question, $result];
 }
 
 function isPrimeNumber(int $number): bool

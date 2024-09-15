@@ -32,7 +32,7 @@ function arithmeticProgressionGame(): array
     return [$question, (string) $result];
 }
 
-function generateProgressionNumbers($start, $end): array
+function generateProgressionNumbers(int $start, int $end): array
 {
     $randomNumbers = range($start, $end, rand(2, 5));
     return array_slice($randomNumbers, 0, 10);
