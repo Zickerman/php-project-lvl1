@@ -2,6 +2,7 @@
 [![Actions Status](https://github.com/Zickerman/php-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Zickerman/php-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6dbb997aff6a327452d3/maintainability)](https://codeclimate.com/github/Zickerman/php-project-lvl1/maintainability)
 
+### Для запуска игр перейдите в командной строке в корень проекта и выполните (например для запуска игры по определению четности числа) команду: make brain-even (остальные можно посмотреть в Makefile)
 
 - Записать работу командной строки:
   - Запустить запись под именем `yourRecord`:  

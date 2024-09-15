@@ -1,13 +1,13 @@
 #!/usr/bin/env php
 <?php
-require_once(__DIR__ . '/../vendor/autoload.php');
-require_once(__DIR__ . '/../src/Engine.php');
-require_once(__DIR__ . '/../src/Games/IsPrimeNumber.php');
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\playGame;
-use function Php\Project\Lvl1\Games\primeNumberGame;
+use function Php\Project\Lvl1\Games\startPrimeNumberGame;
 
-
-$description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-playGame($description, fn() => primeNumberGame(), greet());
+startPrimeNumberGame();

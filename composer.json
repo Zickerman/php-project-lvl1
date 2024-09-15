@@ -15,7 +15,15 @@
 	"autoload": {
 		"psr-4": {
 			"Zick\\PhpProjectLvl1\\": "src/"
-		}
+		},
+		"files": [
+            "src/Engine.php",
+			"src/Games/IsEvenNumber.php",
+			"src/Games/Calculator.php",
+			"src/Games/Gcd.php",
+			"src/Games/ArithmeticProgression.php",
+			"src/Games/IsPrimeNumber.php"
+        ]
 	},
 	"authors": [
 		{

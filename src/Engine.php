@@ -5,10 +5,15 @@ namespace Php\Project\Lvl1;
 use function cli\line;
 use function cli\prompt;
 
-function greet(): string
+const GAMING_PARTIES = 3;
+
+function greet(): void
 {
     line('Welcome to the Brain Games!');
+}
 
+function getPlayerName(): string
+{
     $userName = prompt('May I have your name?');
     line("Hello, %s!", $userName);
 
@@ -21,13 +26,13 @@ function playGame(string $description, callable $getGameData, string $userName)
 
     $counter = 0;
 
-    while ($counter < 3) {
+    while ($counter < GAMING_PARTIES) {
         [$question, $correctAnswer] = $getGameData();
 
         line('Question: %s', $question);
         $userAnswer = prompt('Your answer');
 
-        if ($userAnswer === (string)$correctAnswer) {
+        if ($userAnswer === $correctAnswer) {
             line('Correct!');
             $counter += 1;
         } else {
