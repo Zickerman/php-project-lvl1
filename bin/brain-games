@@ -8,8 +8,12 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\getPlayerName;
+use function cli\line;
+use function cli\prompt;
 
-greet();
-getPlayerName();
+
+line('Welcome to the Brain Games!');
+
+$userName = prompt('May I have your name?');
+
+line("Hello, %s!", $userName);

@@ -2,17 +2,13 @@
 
 namespace Php\Project\Lvl1\Games;
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\getPlayerName;
 use function Php\Project\Lvl1\playGame;
 
 function startGcdGame(): void
 {
-    greet();
-
     $description = 'Find the greatest common divisor of given numbers.';
 
-    playGame($description, fn() => gcdGame(), getPlayerName());
+    playGame($description, fn() => gcdGame());
 }
 
 function gcdGame(): array

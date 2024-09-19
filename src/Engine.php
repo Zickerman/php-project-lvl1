@@ -7,21 +7,13 @@ use function cli\prompt;
 
 const GAMING_PARTIES = 3;
 
-function greet(): void
+function playGame(string $description, callable $getGameData)
 {
     line('Welcome to the Brain Games!');
-}
 
-function getPlayerName(): string
-{
     $userName = prompt('May I have your name?');
     line("Hello, %s!", $userName);
 
-    return $userName;
-}
-
-function playGame(string $description, callable $getGameData, string $userName)
-{
     line($description);
 
     $counter = 0;

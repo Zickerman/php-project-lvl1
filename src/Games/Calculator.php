@@ -2,17 +2,13 @@
 
 namespace Php\Project\Lvl1\Games;
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\getPlayerName;
 use function Php\Project\Lvl1\playGame;
 
 function startCalculatorGame(): void
 {
-    greet();
-
     $description = 'What is the result of the expression?';
 
-    playGame($description, fn() => generateCalculationQuestion(), getPlayerName());
+    playGame($description, fn() => generateCalculationQuestion());
 }
 
 function generateCalculationQuestion(): array
@@ -44,6 +40,6 @@ function calculateResult(int $a, int $b, string $operator): int
         case '*':
             return $a * $b;
         default:
-            return 0;
+            trigger_error('Invalid operator provided: ' . $operator, E_USER_ERROR);
     }
 }

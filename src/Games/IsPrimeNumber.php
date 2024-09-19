@@ -2,17 +2,13 @@
 
 namespace Php\Project\Lvl1\Games;
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\getPlayerName;
 use function Php\Project\Lvl1\playGame;
 
 function startPrimeNumberGame(): void
 {
-    greet();
-
     $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-    playGame($description, fn() => primeNumberGame(), getPlayerName());
+    playGame($description, fn() => primeNumberGame());
 }
 
 function primeNumberGame(): array

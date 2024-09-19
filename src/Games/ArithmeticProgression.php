@@ -2,17 +2,13 @@
 
 namespace Php\Project\Lvl1\Games;
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\getPlayerName;
 use function Php\Project\Lvl1\playGame;
 
 function startArithmeticProgressionGame(): void
 {
-    greet();
-
     $description = 'What number is missing in the progression?';
 
-    playGame($description, fn() => arithmeticProgressionGame(), getPlayerName());
+    playGame($description, fn() => arithmeticProgressionGame());
 }
 
 function arithmeticProgressionGame(): array

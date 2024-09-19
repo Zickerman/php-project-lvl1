@@ -2,17 +2,13 @@
 
 namespace Php\Project\Lvl1\Games;
 
-use function Php\Project\Lvl1\greet;
-use function Php\Project\Lvl1\getPlayerName;
 use function Php\Project\Lvl1\playGame;
 
 function startEvenNumberGame(): void
 {
-    greet();
-
     $description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-    playGame($description, fn() => evenGame(), getPlayerName());
+    playGame($description, fn() => evenGame());
 }
 
 function evenGame(): array
