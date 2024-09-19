@@ -24,6 +24,10 @@ function gcdGame(): array
 
 function calculateGcd(int $a, int $b): int
 {
+    if ($a === 0 || $b === 0) {
+        return $a === 0 ? $b : $a;
+    }
+
     $minNumber = min($a, $b);
 
     for ($i = $minNumber; $i > 0; $i--) {
