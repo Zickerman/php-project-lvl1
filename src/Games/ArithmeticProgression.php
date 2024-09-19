@@ -15,8 +15,9 @@ function arithmeticProgressionGame(): array
 {
     $start = rand(0, 20);
     $end = $start + 50;
+    $step = rand(2, 5);
 
-    $numbers = generateProgressionNumbers($start, $end);
+    $numbers = generateProgressionNumbers($start, $end, $step);
 
     // берем рандомный индекс из финального массива
     $missingIndex = array_rand($numbers);
@@ -28,8 +29,8 @@ function arithmeticProgressionGame(): array
     return [$question, (string) $result];
 }
 
-function generateProgressionNumbers(int $start, int $end): array
+function generateProgressionNumbers(int $start, int $end, int $step): array
 {
-    $randomNumbers = range($start, $end, rand(2, 5));
+    $randomNumbers = range($start, $end, $step);
     return array_slice($randomNumbers, 0, 10);
 }
